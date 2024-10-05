@@ -11,61 +11,63 @@ header {
     text-align: center;
 }
 
-#about {
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
+    height: 100vh;
 }
 
-#about img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+section {
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#skills ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+h1, h2, h3 {
+    color: #333;
 }
 
-#skills li {
-    margin-bottom: 10px;
-}
-
-#projects .project-container {
+.feature-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.project {
-    margin: 20px;
-    width: 300px;
-}
-#projects .project-container {
-    justify-content: flex-start;
-    align-items: flex-end;
+.feature {
+    padding: 1em;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-.project img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-#resume a {
+button {
     background-color: #333;
     color: #fff;
+    border: none;
     padding: 10px 20px;
-    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-#contact a {
-    text-decoration: none;
-    color: #333;
+button:hover {
+    background-color: #555;
 }
 
 footer {
@@ -75,3 +77,4 @@ footer {
     text-align: center;
     clear: both;
 }
+
